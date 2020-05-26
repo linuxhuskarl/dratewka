@@ -1,3 +1,9 @@
+/** @file pms_driver.hpp
+ * @brief PMS5003 driver class header file.
+ * Description.Description.Description.Description.
+ * Description.
+ * Description.Description.
+ */
 #if !defined(MACRO)
 #define MACRO
 
