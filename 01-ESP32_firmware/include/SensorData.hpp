@@ -1,0 +1,23 @@
+#if !defined(SENSORDATA_HEADER)
+#define SENSORDATA_HEADER
+
+#include <cstdint>
+
+/**
+ * @brief Data structure containing all measurements from sensors.
+ * 
+ * @see Sensors
+ */
+struct SensorData
+{
+    uint16_t pm01;      //!< PMS5003 PM1.0 concentration in um/m3
+    uint16_t pm25;      //!< ...
+    uint16_t pm10;      //!< ...
+    float    tempC;     //!< BME280 ...
+    float    humi;      //!< ...
+    uint16_t benzene;   //!< MQ-135 ...
+    uint16_t ammonia;   //!< MQ-135 ...
+    uint16_t monoxide;  //!< MQ-7 ...
+};
+
+#endif // SENSORDATA_HEADER
