@@ -26,19 +26,23 @@ public:
     ~MQSensor();
 
     /**
-     * 
+     * Function enables MQSensor for a specific period of time
+     * @param time - parameter desribing time of enabling MQSensor
      */
-    void enable();
+    void enable(int time);
 
     /**
-     * 
+     * Function disables MQSensor
      */
     void disable();
     
     /**
-     * 
+     * getValue function
+     * Function returning float as a reasult of operation getValue.
+     * @param a - first argument 
+     * @param b - second argument 
      */
-    float getValue();
+    float getValue(int a, int b);
 };
 
 
