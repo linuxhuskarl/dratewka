@@ -20,7 +20,7 @@ void setup() {
   delay(5000);
   connectmqtt();
 
-  sensors.begin()
+  sensors.begin();
 }
 
 void loop() {
@@ -33,7 +33,7 @@ void loop() {
   {
     digitalWrite(LED, LOW);
     SensorData data = sensors.getSensorData();
-    mqttSendSensorData(data);
+    mqttSendSensorData(data, NULL);
     digitalWrite(LED, HIGH);
   }
 
