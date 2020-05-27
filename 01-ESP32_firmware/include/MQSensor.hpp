@@ -6,7 +6,7 @@
 /**
  * MQ-7 and MQ-135 sensors driver class.
  */
-class MQSensor ///< MQSensor class \date $Date: 2020/05/20 14:16:20 $
+class MQSensor 
 {
 private:
     uint8_t analogPin;  
@@ -39,10 +39,10 @@ public:
     /**
      * @brief getValue function
      * Function returning float as a reasult of operation getValue.
-     * @param a - first argument 
-     * @param b - second argument 
+     * @param a - first argument of a linear function
+     * @param b - second argument of a linear function
      */
-    float getValue(int a, int b);
+    float getValue(float a, float b);
 };
 
 
