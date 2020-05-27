@@ -31,9 +31,9 @@ void loop(){
 /**
  * @brief  Function passed into another function as an argument, 
  * Is then invoked inside the outer function to complete some kind of routine or action.
- * @param topic
- * @param payload
- * @param lenght
+ * @param topic mqtt topic of the received message
+ * @param payload message body, e.g. text or JSON
+ * @param length size of payload in bytes
  */
 void callback(char* topic, byte* payload, unsigned int length);
 
