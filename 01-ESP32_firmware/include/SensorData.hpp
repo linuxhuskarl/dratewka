@@ -8,24 +8,17 @@
  * A Struct object contains a value for each attribute of the structured type that it represents. 
  * By default, an instance of Struct is valid as long as the application has a reference to it.
  * @see Sensors
- * @param pm01 data to be sent
- * @param pm25 data to be sent
- * @param tempC data to be sent
- * @param humi data to be sent
- * @param benzene data to be sent
- * @param ammonia data to be sent
- * @param monoxide data to be sent
  */
 struct SensorData
 {
-    uint16_t pm01;      //!< PMS5003 PM1.0 concentration in um/m3
-    uint16_t pm25;      //!< ...
-    uint16_t pm10;      //!< ...
-    float    tempC;     //!< BME280 ...
-    float    humi;      //!< ...
-    uint16_t benzene;   //!< MQ-135 ...
-    uint16_t ammonia;   //!< MQ-135 ...
-    uint16_t monoxide;  //!< MQ-7 ...
+    uint16_t pm01;      //!< PMS5003 PM1.0 concentration in ug/m3
+    uint16_t pm25;      //!< PMS5003 PM2.5 concentration in ug/m3
+    uint16_t pm10;      //!< PMS5003 PM10 concentration in ug/m3
+    float    tempC;     //!< BME280 temprature in °C
+    float    humi;      //!< BME280 humidity in % RH
+    uint16_t benzene;   //!< MQ-135 benzene concetration in PPM
+    uint16_t ammonia;   //!< MQ-135 ammonia concetration in PPM
+    uint16_t monoxide;  //!< MQ-7 carbon monoxide concetrarion in PPM
 };
 
 #endif // SENSORDATA_HEADER

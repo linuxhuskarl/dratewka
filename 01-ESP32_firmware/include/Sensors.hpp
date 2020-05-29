@@ -28,19 +28,25 @@ public:
 
     /**
      * @brief Initialize sensors and begin collecting data.
-     * 
+     * Each sensor must be properly initialized before starting measurements.
+     * Otherwise, it may show incorrect measurments.
      * @return zero if successful
      */
-    uint8_t begin();
+    uint8_t begin(){
+        PMS5003_init();
+        BME280_init();
+        MQ135_init();
+        MQ7_init();
+    };
 
     /**
      * 
-     * @return nonzero if new data is present.
+     * @return nonzero if new data is present
      */
     uint8_t fetchData();
 
     /**
-     * ...
+     * @brief Download measurements.
      * 
      * @return struct containing current measurements
      */
