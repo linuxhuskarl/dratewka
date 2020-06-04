@@ -1,3 +1,14 @@
+/**
+ * @file SensorData.hpp
+ * 
+ * @brief SensorData struct header file for Dratewka ESP32 firmware
+ * 
+ * @author Weronika Bulińska (fairybu)
+ * @author Tomasz Leliwa (Leroy404)
+ * @author Szymon Plec (Grafiks11)
+ * @author Maciej Brzeski (linuxhuskarl)
+ */
+
 #if !defined(SENSORDATA_HEADER)
 #define SENSORDATA_HEADER
 
@@ -5,8 +16,10 @@
 
 /**
  * @brief Data structure containing all measurements from sensors.
+ * 
  * A Struct object contains a value for each attribute of the structured type that it represents. 
  * By default, an instance of Struct is valid as long as the application has a reference to it.
+ * 
  * @see Sensors
  */
 struct SensorData
